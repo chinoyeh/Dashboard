@@ -4,7 +4,8 @@ import Calendar from 'react-calendar'
 import 'react-bar-chart/example/BarChart.css'
 import 'react-calendar/dist/Calendar.css'
 import BarChart from 'react-bar-chart';
-import 'semantic-ui-css/semantic.min.css'
+
+
 
 
 const Dashboard = () => {
@@ -133,7 +134,7 @@ const Dashboard = () => {
      </div>
    <div className='bar-chart'>
    <BarChart
-      width={800}
+      width={700}
       height={360}
       margin={margin}
       data={data}
@@ -165,19 +166,24 @@ const Dashboard = () => {
       
         <Calendar onChange={onChange} value={value} />
  
-      <div className='call'>
+      <div className='call-div'>
         <h4>
         Project Manager
         </h4>
         <button>+ New</button>
         <h2> Client Meeting</h2>
-      </div>
-      <div className='slider'>
+        <div className='slider'>
        <div className='call-slider'> <i className='call'/></div>
+       <div>
+        <h3>Swipe to call</h3>
+       </div>
       </div>
+      </div>
+    
         
       </div>
  </div>
+ <i class="fa fa-phone" aria-hidden="true"></i>
  
     </div>
     </div>
